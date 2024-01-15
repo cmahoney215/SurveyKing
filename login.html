@@ -1,0 +1,34 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    login
+{% endblock %}
+{% block content %} 
+<div style="background-color:aliceblue; height: 1000px; padding-top: 50px;">
+{% block main %}
+<form action="/login" method="post">
+    <div style="margin: auto; width: 400px; height: 250px; position:relative; background-color: white;
+        border-radius: 7px;">
+        <div>
+            <h1
+                style="text-align: center; padding: 17px; font-size: 20px; font-weight:700; color:rgb(0, 0, 0)">
+                Sign in to your account
+            </h1>
+        </div>
+        <div class="account2">
+            <div style="margin-bottom: 15px;">
+                <input class="login3" autocomplete="off" autofocus id="username" name="username"
+                    placeholder="Username" type="text">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input class="login3" id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <button style="width:80%;  height: 40px; border-radius: 5px; background-color: rgb(49, 69, 79); 
+            color: white;" type="submit">Sign in</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
+</div>
+{% endblock %}

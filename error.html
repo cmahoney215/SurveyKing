@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block main %}
+<div style="height:400px; width:300px; margin: auto;
+width: 50%; margin-top:50px;">
+<img class="image" src="/static/images/error.gif" :alt="imgAlt">
+<div style="text-align:center; font-weight:800; font-size:30px;">
+could not complete request.
+</div>
+<div style="text-align:center; font-weight:800; font-size:30px;">
+    {{ bottom }}
+</div>
+{% endblock %}
+

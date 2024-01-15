@@ -1,0 +1,114 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    survey
+{% endblock %}
+
+{% block main %}
+<div class="s1">
+    <form action="/burgerking" method="post">
+    <div class="box grid">
+        <div class="card survey">
+            <div class="question">
+                Which among the following is your favorite product at Burger King? 
+            </div>
+                <div id="content">
+                    <label class="labl">
+                        <input type="radio" name="fav-product" value="Whopper">
+                        <div class="answer">Whopper</div>
+                    </label>
+
+
+                    <label class="labl">
+                        <input type="radio" name="fav-product" value="Chicken Sandwich">
+                        <div class="answer">Chicken Sandwich</div>
+                    </label>
+
+
+                    <label class="labl">
+                        <input type="radio" name="fav-product" value="Chicken Fries">
+                        <div class="answer">Chicken Fries</div>
+                    </label>
+
+
+                    <label class="labl">
+                        <input type="radio" name="fav-product" value="Bacon King">
+                        <div class="answer">Bacon King</div>
+                    </label>
+                </div>
+
+            </div>
+            <div class="card survey" style="background: linear-gradient(#9198e5, #e66465);">
+                <div class="question">
+                    On a scale 1-5, how would you rate the quality of the food?
+                </div>
+                <div id="content">
+                    <label class="labl">
+                        <input type="radio" name="fd-quality" value="1">
+                        <div class="answer">1 (Terrible)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="fd-quality" value="2">
+                        <div class="answer">2 (Bad)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="fd-quality" value="3">
+                        <div class="answer">3 (Okay)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="fd-quality" value="4">
+                        <div class="answer">4 (Good)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="fd-quality" value="5">
+                        <div class="answer">5 (Great)</div>
+                    </label>
+                </div>
+            </div>
+            <div class="card survey">
+                <div class="question">
+                    On a scale 1-5, how would you rate the quality of service?
+                </div>
+                <div id="content">
+                    <label class="labl">
+                        <input type="radio" name="svc-quality" value="1">
+                        <div class="answer">1 (Terrible)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="svc-quality" value="2">
+                        <div class="answer">2 (Bad)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="svc-quality" value="3">
+                        <div class="answer">3 (Okay)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="svc-quality" value="4">
+                        <div class="answer">4 (Good)</div>
+                    </label>
+
+                    <label class="labl">
+                        <input type="radio" name="svc-quality" value="5">
+                        <div class="answer">5 (Great)</div>
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="div-align-submit" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+            <button class="sub-button-chick" style="background-color: rgb(46, 46, 46);"
+                type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock %}

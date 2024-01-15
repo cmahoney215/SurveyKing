@@ -1,0 +1,141 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+<div class="start">
+    <h2 class="start1">
+        Multiple Choice Surveys
+    </h2>
+    <h3 class="start2">
+        Below is a list of surveys with a variety of topics and themes to choose from. See how you compare
+        with freinds and others after completing one of the surveys.
+    </h3>
+</div>
+
+<div id="m1">
+    <div class="box grid md:grid-cols-3">
+        <div class="card">
+
+            <div class="container">
+                <img class="image" src="/static/images/burger-king.jpg" :alt="imgAlt">
+                <div class="overlay">
+                    <div>
+                        <span>Take Survey Here</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem" class="inline-block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </div>
+                    <a href="/burgerking">
+                        <div class="clipboard">
+                            <svg class="inline-block clipboard-icon" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="badge">
+                <span>Burger King</span>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="container">
+                <img class="image" src="/static/images/chick-fil-a.jpg" :alt="imgAlt">
+                <div class="overlay">
+                    <div>
+                        <span>Take Survey Here</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem" class="inline-block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </div>
+                    <a href="/chickfila">
+                        <div class="clipboard">
+                            <svg class="inline-block clipboard-icon" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="badge">
+                <span>Chick-fil-A</span>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="container">
+                <img class="image" src="/static/images/mcdonalds.jpg" :alt="imgAlt">
+                <div class="overlay">
+                    <div>
+                        <span>Take Survey Here</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem" class="inline-block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </div>
+
+                    <a href="/mcdonalds">
+                        <div class="clipboard">
+                            <svg class="inline-block clipboard-icon" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="badge">
+                <span>McDonald's</span>
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="container">
+                <img class="image" src="/static/images/arbys.jpg" :alt="imgAlt">
+                <div class="overlay">
+                    <div>
+                        <span>Take Survey Here</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem" class="inline-block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </div>
+                    <a href="/arbys">
+                    <div class="clipboard">
+                        <svg class="inline-block clipboard-icon" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="badge">
+                <span>Arby's</span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

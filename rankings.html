@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet"  href="/static/charts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock %}
+
+{% block title %}
+    rankings
+{% endblock %}
+
+{% block main %}
+<div class="profile-flex">
+	<div style="width:40%">
+	  <div class="data-header">
+		<h2>List of fast food data taken from surveys</h2>
+	  </div>
+	  <span style="font-size: 21px; color:#5c5c5c">Displayed below is data that has been collected in all places involving fast food from all users who submitted a survey. Each category is the adverage score of all submissions combined</span>
+	</div>
+	<div style="width:42%;">
+	  <img style="border-radius:50px;" src="/static/images/foodplaces.png" :alt="imgAlt">
+	</div>
+</div>
+<div class="food-chart">
+	<div class="food-chart-title">
+	  <h2>Fast Food
+	  </h2>
+	</div>
+	<div class="boxx">
+		{% for place in places %}
+		<div style="position:relative; height:100%; width:100%;">
+			<div style="text-align:center; font-weight: 500; font-size:20px;"><span>{{ place }}</span></div>
+			<div style="margin-left:14%; padding-top: 25px; position:absolute;">
+		  		<p style="padding-bottom: 1px;">5</p>
+		 	 	<p style="padding-top: 16px;">4</p>
+		 	 	<p style="padding-top: 16px;">3</p>
+		  		<p style="padding-top: 16px; padding-bottom: 15px;">2</p>
+		  		<p>1</p>
+			</div>
+			<ul class="chart">
+		  		<li>
+					<span style="height:{{ htmlFoodVoteAdv[place] }}%; background: rgba(255, 98, 130, 0.75);" title="Food Quality"></span>
+		  		</li>
+		  		<li>
+					<span style="height:{{ htmlServiceVoteAdv[place] }}%; background: rgba(54, 159, 236, 0.75);" title="Service Quality"></span>
+		  		</li>
+		  		<li>
+					<span style="height:{{ htmlTotalAdv[place] }}%; background: rgba(75, 192, 189, 0.75);" title="Overall Rating"></span>
+		  		</li>
+
+			</ul>
+	   </div>
+		{% endfor %}
+	</div>
+</div>
+<div style="padding:100px">
+	<div style="padding-top:50px;">
+	  <div class="rank-font">
+		<h2>Rankings
+		</h2>
+	  </div>
+	  <table id="customers">
+		<tr>
+			<th style="background:linear-gradient(to right, #ff6282, #369fec);">Rank</th>
+            <th style="background:linear-gradient(to right, #369fec, #4bc0bd);">Restaurant</th>
+            <th style="background:linear-gradient(to right, #4bc0bd 66%, #c08397);">Most Popular Item</th>
+			<th style="background:linear-gradient(to right, #c08397, #ff6282); width: 17%;">Surveys Taken</th>
+		</tr>
+		{% for place in sortedAdv %}
+		<tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ place }}</td>
+            <td>{{ favProduct[place][0][0] }}</td>
+			<td>{{ takenSurveys[place] }}</td>
+        </tr>
+		{% endfor %}
+	  </table>
+	</div>
+</div>
+{% endblock %}
+
+ 
